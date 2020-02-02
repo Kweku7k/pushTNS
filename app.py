@@ -73,7 +73,6 @@ def next():
     sender_id = "KNUST-Admin" #11 Characters maximum
     send_sms(api_key,phone,message,sender_id)
     return render_template('vendors.html')
-
 # return render_template('ourvendors.html')
 
 
@@ -158,6 +157,11 @@ def index():
 def masterchart():
     all_orders = Order.query.order_by(Order.date_created).all()
     return render_template('chart.html', all_orders=all_orders)
+
+@app.route('/tempform', methods=['POST','GET'])
+def tempform():
+    all_orders = Order.query.order_by(Order.date_created).all()
+    return render_template('newform.html')
 
 @app.route('/new')
 def new():
