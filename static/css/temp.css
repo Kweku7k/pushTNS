@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(240, 240, 240, 0.7);
 }
 
 .section-one{
@@ -19,4 +19,22 @@ body{
 
 .the-forms{
     margin: 10%;
+}
+
+.all{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    padding-bottom: 0;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09); 
+}
+
+#exampleInputEmail1{
+    border: none;
+    /* background-color: none; */
+}
+
+#label1{
+    color: teal;
+    font-weight: bold;
 }
